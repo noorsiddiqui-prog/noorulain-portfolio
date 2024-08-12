@@ -283,36 +283,36 @@ const projects = [
     // source_code_link: "https://app-test.track.lease/",
     source_code_link: "#",
   },
-  {
-    name: "Voodoo",
-    description:
-      "Web application Dashboard that creates and schedules shorts of a video. ",
-    tags: [
-      {
-        name: "React Ts",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux toolkit",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Ant Design",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "express js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
-    image: voodoo,
-    // source_code_link: "https://app.voodoo.tube/",
-    source_code_link: "#",
-  },
+  // {
+  //   name: "Voodoo",
+  //   description:
+  //     "Web application Dashboard that creates and schedules shorts of a video. ",
+  //   tags: [
+  //     {
+  //       name: "React Ts",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux toolkit",
+  //       color: "red-text-gradient",
+  //     },
+  //     {
+  //       name: "Ant Design",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "express js",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: voodoo,
+  //   // source_code_link: "https://app.voodoo.tube/",
+  //   source_code_link: "#",
+  // },
   {
     name: "EatCoast Website",
     description:
