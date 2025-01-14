@@ -25,6 +25,8 @@ import {
   voodoo,
   tracklease,
   enseedling,
+  voodooNew,
+  voodooNew2,
 } from "../assets";
 
 export const navLinks = [
@@ -44,36 +46,36 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "React JS Developer",
+    title: "React JS",
     icon: mobile,
   },
 
   {
-    title: "React Native Developer",
+    title: "React Native",
     icon: backend,
   },
   {
-    title: "Backend Developer",
+    title: "Backend",
     icon: creator,
   },
   {
-    title: "Vue JS Developer",
+    title: "Vue JS",
     icon: mobile,
   },
   {
-    title: "Node Js Developer",
+    title: "Node Js",
     icon: backend,
   },
   {
-    title: "Express Js Developer",
+    title: "Express Js",
     icon: backend,
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend",
     icon: web,
   },
 ];
@@ -138,13 +140,17 @@ const experiences = [
     title: "MERN Developer",
     company_name: "Expertizo",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-    iconBg: "#383E56",
-    date: "Jan 2024 - Present",
+    iconBg: "#E6DEDD",
+    date: "January 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js, Node.js, express.js, mongodb, typescript and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building dynamic and responsive web applications using MERN stack technologies: React.js, Node.js, Express.js, MongoDB, and TypeScript.",
+      "Implemented cloud-based solutions with Google Cloud Run and Google Cloud Buckets for optimized performance and scalability.",
+      "Integrated social media platforms, including managing Facebook API permissions and automating video scheduling across multiple platforms.",
+      "Developed custom reporting features and managed deployments, ensuring seamless project delivery and client satisfaction.",
+      "Collaborated closely with cross-functional teams and clients to gather requirements, provide solutions, and ensure timely project completion.",
+      "Led and mentored a team of junior developers, providing guidance on best practices and conducting code reviews to ensure high-quality deliverables.",
+      "Facilitated regular meetings with clients to understand project requirements, present project updates, and align deliverables with their expectations.",
+      "Designed workflows and processes to enhance team productivity and ensure adherence to project timelines and quality standards.",
     ],
   },
   {
@@ -152,12 +158,11 @@ const experiences = [
     company_name: "BitsPro",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#383E56",
-    date: "June 2023 - November 2023",
+    date: "July 2023 - December 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
@@ -187,7 +192,7 @@ const experiences = [
     ],
   },
   {
-    title: "React Js Intern",
+    title: "React Js Developer",
     company_name: "Ghani Business Solutions",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#E6DEDD",
@@ -197,6 +202,17 @@ const experiences = [
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Js Intern",
+    company_name: "Ghani Business Solutions",
+    icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
+    iconBg: "#383E56",
+    date: "May 2022 - July 2022",
+    points: [
+      "Developing  web applications using React.js and other related technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
 ];
@@ -230,6 +246,61 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Voodoo Project",
+    description:
+      "Developed web application dashboards capable of automating the creation of Shorts from Youtube uploaded videos, YouTube URLs, or manually uploaded files. Integrated automated scheduling features across multiple social media platforms.",
+    tags: [
+      {
+        name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux toolkit",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Google Cloud Run",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Google Cloud Buckets",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Social Platforms",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Shorts Generation",
+        color: "green-text-gradient",
+      },
+    ],
+    image: voodooNew2,
+    source_code_link: "https://app.voodoo.tube/",
+  },
+  {
+    name: "TrackLease Imoon",
+    description:
+      "Web application Dashboard that manages laundary and its shipping orders. ",
+    tags: [
+      {
+        name: "React Ts",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux toolkit",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tracklease,
+    source_code_link: "https://app-test.track.lease/",
+    source_code_link: "#",
+  },
+  {
     name: "Vella Vision",
     description: "Web application Dashboard that manages products analytics. ",
     tags: [
@@ -260,28 +331,6 @@ const projects = [
     ],
     image: vellavision,
     source_code_link: "https://vella-vision.vercel.app/dashboard",
-  },
-  {
-    name: "TrackLease Imoon",
-    description:
-      "Web application Dashboard that manages laundary and its shipping orders. ",
-    tags: [
-      {
-        name: "React Ts",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux toolkit",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Ant Design",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tracklease,
-    // source_code_link: "https://app-test.track.lease/",
-    source_code_link: "#",
   },
   // {
   //   name: "Voodoo",

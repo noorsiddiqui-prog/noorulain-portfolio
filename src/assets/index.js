@@ -40,6 +40,8 @@ import amazon from "./amazon.png";
 
 import tracklease from "./tracklease.png";
 import voodoo from "./voodoo.png";
+import voodooNew from "./voodoo-new.png";
+import voodooNew2 from "./voodoo-new2.png";
 import enseedling from "./enseedling.png";
 
 export {
@@ -82,4 +84,6 @@ export {
   tracklease,
   voodoo,
   enseedling,
+  voodooNew,
+  voodooNew2,
 };
