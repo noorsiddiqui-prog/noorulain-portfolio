@@ -72,7 +72,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/18dDp2L-if7VvcLSH5VQ3hwrnevGI82QP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s1ToS2eaWIylR8V1LPAJiMMI0PJl1sgC/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-secondary text-white py-2 px-4 rounded-lg hover:bg-white hover:text-secondary transition duration-300"

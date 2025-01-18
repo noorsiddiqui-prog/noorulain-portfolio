@@ -154,7 +154,7 @@ const experiences = [
     ],
   },
   {
-    title: "React.js Developer",
+    title: "React Js Developer",
     company_name: "BitsPro",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#383E56",
@@ -163,19 +163,6 @@ const experiences = [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-    ],
-  },
-  {
-    title: "React JS Developer - Part Time",
-    company_name: "Enseedling",
-    icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-    iconBg: "#E6DEDD",
-    date: "May 2023 - June 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
@@ -196,7 +183,7 @@ const experiences = [
     company_name: "Ghani Business Solutions",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#E6DEDD",
-    date: "August 2022 - December 2023",
+    date: "May 2022 - December 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -205,11 +192,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Js Intern",
-    company_name: "Ghani Business Solutions",
+    title: "React JS – Junior Developer",
+    company_name: "Enseedling Limited, India (Remote)",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#383E56",
-    date: "May 2022 - July 2022",
+    date: "March 2021 - February 2022",
     points: [
       "Developing  web applications using React.js and other related technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
