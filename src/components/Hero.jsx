@@ -1,7 +1,22 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const [showCanvas, setShowCanvas] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    setShowCanvas(mediaQuery.matches);
+
+    const handleResize = (event) => {
+      setShowCanvas(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
       {/* Hero Text Section */}
@@ -24,17 +39,18 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* 3D Canvas */}
-      <div className="absolute inset-0 w-full h-full hidden lg:block">
-        <ComputersCanvas />
-      </div>
+      {/* 3D Canvas (Only for screens > 768px) */}
+      {showCanvas && (
+        <div className="absolute inset-0 w-full h-full hidden md:block">
+          <ComputersCanvas />
+        </div>
+      )}
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 w-full flex justify-center items-center">
         <a href="#about" className="group">
           <div className="flex justify-center items-start p-2 transition-all group-hover:scale-110 border-[#915EFF] border-4 rounded-3xl 
             w-[30px] h-[45px] sm:w-[30px] sm:h-[55px] md:w-[35px] md:h-[64px]">
-            
             <motion.div
               animate={{ y: [0, 20, 0] }}
               transition={{
