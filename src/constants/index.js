@@ -27,6 +27,7 @@ import {
   enseedling,
   voodooNew,
   voodooNew2,
+  AIChatbot
 } from "../assets";
 
 export const navLinks = [
@@ -263,7 +264,7 @@ const projects = [
       },
     ],
     image: voodooNew2,
-    source_code_link: "https://app.voodoo.tube/",
+    // source_code_link: "https://app.voodoo.tube/",
     live_demo_link: "https://app.voodoo.tube/",
   },
   {
@@ -285,8 +286,30 @@ const projects = [
       },
     ],
     image: tracklease,
-    source_code_link: "https://app-test.track.lease/",
+    // source_code_link: "https://app-test.track.lease/",
     live_demo_link: "https://app-test.track.lease/",
+  },
+  {
+    name: "ChatBot AI",
+    description:
+      "Web application dashboard that integrates Gemini AI chatbot for assistance efficiently.",
+    tags: [
+      {
+        name: "React TS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Gemini AI",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Google AI",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: AIChatbot,
+    source_code_link: "https://github.com/noorsiddiqui-prog/Gemeni-Chatbot",
+    live_demo_link: "https://gemeni-chatbot.vercel.app/",
   },
   {
     name: "Vella Vision",
@@ -318,7 +341,7 @@ const projects = [
       },
     ],
     image: vellavision,
-    source_code_link: "https://vella-vision.vercel.app/dashboard",
+    source_code_link: "https://github.com/noorsiddiqui-prog/VellaVision",
     live_demo_link: "https://vella-vision.vercel.app/dashboard",
   },
   {
@@ -336,7 +359,7 @@ const projects = [
       },
     ],
     image: customer,
-    source_code_link: "https://customer-ec.vercel.app",
+    // source_code_link: "https://customer-ec.vercel.app",
     live_demo_link: "https://customer-ec.vercel.app",
   },
   {
@@ -354,7 +377,7 @@ const projects = [
       },
     ],
     image: superadmin,
-    source_code_link: "https://super-admin-ec.vercel.app",
+    // source_code_link: "https://super-admin-ec.vercel.app",
     live_demo_link: "https://super-admin-ec.vercel.app",
   },
   {
@@ -372,7 +395,7 @@ const projects = [
       },
     ],
     image: caterer,
-    source_code_link: "https://caterer-ec.vercel.app",
+    // source_code_link: "https://caterer-ec.vercel.app",
     live_demo_link: "https://caterer-ec.vercel.app",
   },
   {
@@ -390,7 +413,7 @@ const projects = [
       },
     ],
     image: softcity,
-    source_code_link: "https://softcity-group.netlify.app/",
+    // source_code_link: "https://softcity-group.netlify.app/",
     live_demo_link: "https://softcity-group.netlify.app/"
   },
   {
@@ -423,7 +446,7 @@ const projects = [
       },
     ],
     image: amazon,
-    source_code_link: "#",
+    source_code_link: "https://github.com/noorsiddiqui-prog/AmazonClone",
     live_demo_link: "#"
   },
   {
@@ -441,7 +464,7 @@ const projects = [
       },
     ],
     image: enseedling,
-    source_code_link: "https://main--enseedling.netlify.app/",
+    // source_code_link: "https://main--enseedling.netlify.app/",
     live_demo_link: "https://main--enseedling.netlify.app/"
   },
 ];
