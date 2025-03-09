@@ -264,6 +264,7 @@ const projects = [
     ],
     image: voodooNew2,
     source_code_link: "https://app.voodoo.tube/",
+    live_demo_link: "https://app.voodoo.tube/",
   },
   {
     name: "TrackLease Imoon",
@@ -285,7 +286,7 @@ const projects = [
     ],
     image: tracklease,
     source_code_link: "https://app-test.track.lease/",
-    source_code_link: "#",
+    live_demo_link: "https://app-test.track.lease/",
   },
   {
     name: "Vella Vision",
@@ -318,37 +319,8 @@ const projects = [
     ],
     image: vellavision,
     source_code_link: "https://vella-vision.vercel.app/dashboard",
+    live_demo_link: "https://vella-vision.vercel.app/dashboard",
   },
-  // {
-  //   name: "Voodoo",
-  //   description:
-  //     "Web application Dashboard that creates and schedules shorts of a video. ",
-  //   tags: [
-  //     {
-  //       name: "React Ts",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "redux toolkit",
-  //       color: "red-text-gradient",
-  //     },
-  //     {
-  //       name: "Ant Design",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "express js",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //   ],
-  //   image: voodoo,
-  //   // source_code_link: "https://app.voodoo.tube/",
-  //   source_code_link: "#",
-  // },
   {
     name: "EatCoast Website",
     description:
@@ -365,6 +337,7 @@ const projects = [
     ],
     image: customer,
     source_code_link: "https://customer-ec.vercel.app",
+    live_demo_link: "https://customer-ec.vercel.app",
   },
   {
     name: "Super Admin",
@@ -382,6 +355,7 @@ const projects = [
     ],
     image: superadmin,
     source_code_link: "https://super-admin-ec.vercel.app",
+    live_demo_link: "https://super-admin-ec.vercel.app",
   },
   {
     name: "Caterer",
@@ -399,6 +373,7 @@ const projects = [
     ],
     image: caterer,
     source_code_link: "https://caterer-ec.vercel.app",
+    live_demo_link: "https://caterer-ec.vercel.app",
   },
   {
     name: "Softcity Analytics",
@@ -416,6 +391,7 @@ const projects = [
     ],
     image: softcity,
     source_code_link: "https://softcity-group.netlify.app/",
+    live_demo_link: "https://softcity-group.netlify.app/"
   },
   {
     name: "Amazon clone",
@@ -448,6 +424,7 @@ const projects = [
     ],
     image: amazon,
     source_code_link: "#",
+    live_demo_link: "#"
   },
   {
     name: "Enseedling Group",
@@ -465,6 +442,7 @@ const projects = [
     ],
     image: enseedling,
     source_code_link: "https://main--enseedling.netlify.app/",
+    live_demo_link: "https://main--enseedling.netlify.app/"
   },
 ];
 

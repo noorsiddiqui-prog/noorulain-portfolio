@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -8,7 +7,7 @@ const Hero = () => {
       {/* Hero Text Section */}
       <div className="absolute inset-0 top-[120px] max-w-7xl mx-auto px-6 flex flex-row items-start gap-6">
         {/* Decorative Line */}
-        <div className="flex flex-col justify-center items-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-4">
           <div className="w-5 h-5 rounded-full bg-[#915EFF] shadow-lg" />
           <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-[#915EFF] to-transparent" />
         </div>
@@ -33,7 +32,9 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 w-full flex justify-center items-center">
         <a href="#about" className="group">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#915EFF] flex justify-center items-start p-2 transition-all group-hover:scale-110">
+          <div className="flex justify-center items-start p-2 transition-all group-hover:scale-110 border-[#915EFF] border-4 rounded-3xl 
+            w-[30px] h-[45px] sm:w-[30px] sm:h-[55px] md:w-[35px] md:h-[64px]">
+            
             <motion.div
               animate={{ y: [0, 20, 0] }}
               transition={{
@@ -41,7 +42,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-[#915EFF] mb-1"
+              className="w-[6px] h-[6px] sm:w-[8px] sm:h-[8px] md:w-[10px] md:h-[10px] rounded-full bg-[#915EFF] mb-1"
             />
           </div>
         </a>
