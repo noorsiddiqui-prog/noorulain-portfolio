@@ -45,6 +45,8 @@ import voodooNew from "./voodoo-new.png";
 import voodooNew2 from "./voodoo-new2.png";
 import enseedling from "./enseedling.png";
 
+import AIChatbot from "./AI-chatbot.png";
+
 export {
   logo,
   backend,
@@ -87,5 +89,6 @@ export {
   enseedling,
   voodooNew,
   voodooNew2,
-  linkIcon
+  linkIcon,
+  AIChatbot
 };
