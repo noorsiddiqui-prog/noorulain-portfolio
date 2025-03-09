@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
@@ -14,17 +14,18 @@ const Contact = () => {
     email: '',
     message: '',
   })
-
   const [loading, setLoading] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const handleChange = (e) => {
-    const { target } = e
-    const { name, value } = target
-
-    setForm({
-      ...form,
-      [name]: value,
-    })
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
   }
 
   const handleSubmit = (e) => {
@@ -42,32 +43,24 @@ const Contact = () => {
           to_email: 'noorsiddiqui048@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false)
           alert('Thank you. I will get back to you as soon as possible.')
-
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          })
+          setForm({ name: '', email: '', message: '' })
         },
         (error) => {
           setLoading(false)
           console.error(error)
-
           alert('Ahh, something went wrong. Please try again.')
-        },
+        }
       )
   }
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -75,11 +68,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -123,12 +112,14 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {windowWidth > 768 && (
+        <motion.div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      )}
     </div>
   )
 }
