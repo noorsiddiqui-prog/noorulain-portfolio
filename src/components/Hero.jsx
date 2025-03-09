@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Text Content */}
         <div>
-          <h1 className="text-xl sm:text-2xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
+          <h1 className="text-2xl sm:text-2xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg">
             Hi, I'm <span className="text-[#915EFF]">Noor Ul Ain</span>
           </h1>
           <p className="text-sm sm:text-lg md:text-xl lg:text-2xl mt-3 text-white-200 leading-relaxed">

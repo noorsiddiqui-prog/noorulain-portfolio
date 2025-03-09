@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -69,18 +69,35 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center text-[14px] sm:text-[16px]`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center text-[22px] sm:text-[30px] md:text-[36px]`}>
-          Work Experience.
-        </h2>
-      </motion.div>
+      <>
+        {!isSmallScreen ? (
+          <motion.div variants={textVariant()} className="md:mt-4 sm:mt-6">
+            <p className={`${styles.sectionSubText} text-center`}>What I have done so far</p>
+            <h2 className={`${styles.sectionHeadText} text-center`}>Work Experience.</h2>
+          </motion.div>
+        ) : (
+          <div className="md:mt-4 sm:mt-6">
+            <p className={`${styles.sectionSubText} text-center`}>What I have done so far</p>
+            <h2 className={`${styles.sectionHeadText} text-center`}>Work Experience.</h2>
+          </div>
+        )}
+      </>
 
-      <div className="mt-10 sm:mt-20 flex flex-col">
+
+      <div className="md:mt-10 sm:mt-20 flex flex-col">
         <VerticalTimeline layout="1-column-left">
           {experiences.map((experience, index) => (
             <ExperienceCard key={`experience-${index}`} experience={experience} />
