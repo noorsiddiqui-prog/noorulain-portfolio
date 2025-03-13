@@ -88,7 +88,8 @@ const Navbar = () => {
           <li>
             <a
               // href="https://drive.google.com/file/d/1s1ToS2eaWIylR8V1LPAJiMMI0PJl1sgC/view?usp=sharing"
-              href="https://drive.google.com/file/d/1I38YYqcx7LJHiy-rkS61lDdnboJN20V1/view?usp=sharing"
+              // href="https://drive.google.com/file/d/1I38YYqcx7LJHiy-rkS61lDdnboJN20V1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1AtwwDq3Ads82V4lcm4hNtNAdleMvgi1y/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-secondary text-white py-2 px-4 rounded-lg hover:bg-white hover:text-secondary transition duration-300"
