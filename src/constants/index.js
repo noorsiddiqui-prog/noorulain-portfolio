@@ -159,32 +159,32 @@ const experiences = [
     company_name: "BitsPro",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#383E56",
-    date: "July 2023 - December 2023",
+    date: "January 2023 - December 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
+  // {
+  //   title: "MERN Developer",
+  //   company_name: "TriconV Technologies",
+  //   icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
+  //   iconBg: "#383E56",
+  //   date: "January 2023 - June 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "MERN Developer",
-    company_name: "TriconV Technologies",
-    icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-    iconBg: "#383E56",
-    date: "January 2023 - June 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Js Developer",
+    title: "MERN Junior Developer",
     company_name: "Ghani Business Solutions",
     icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
     iconBg: "#E6DEDD",
-    date: "May 2022 - December 2023",
+    date: "March 2021 - December 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -192,17 +192,17 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "React JS – Junior Developer",
-    company_name: "Enseedling Limited, India (Remote)",
-    icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
-    iconBg: "#383E56",
-    date: "March 2021 - February 2022",
-    points: [
-      "Developing  web applications using React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-    ],
-  },
+  // {
+  //   title: "React JS – Junior Developer",
+  //   company_name: "Enseedling Limited, India (Remote)",
+  //   icon: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
+  //   iconBg: "#383E56",
+  //   date: "March 2021 - February 2022",
+  //   points: [
+  //     "Developing  web applications using React.js and other related technologies.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
